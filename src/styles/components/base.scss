@@ -1,0 +1,20 @@
+@import "../abstracts/variables.scss";
+@font-face {
+  font-family: AvenirNext;
+  src: url(../webFont/AvenirNextLTPro-Regular.otf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: AvenirNext;
+  background: $color_light;
+  font-size: 10px;
+  margin: 0.5rem 10rem 1.3rem 10rem;
+}

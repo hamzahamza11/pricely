@@ -1,0 +1,47 @@
+@import "../abstracts/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@font-face {
+  font-family: AvenirNext;
+  src: url(../webFont/AvenirNextLTPro-Regular.otf);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 1.1rem;
+  padding: 1rem;
+  padding-left: 0.3rem;
+
+  &_logo {
+    display: flex;
+
+    & > h3 {
+      font-family: AvenirNext;
+      transform: translateY(4px);
+    }
+    &-icon {
+      height: 2rem;
+      width: 1.5rem;
+      background: yellow;
+      margin-right: 0.3rem;
+    }
+  }
+
+  &_links {
+    font-family: "Poppins", sans-serif;
+    color: $parimary_color;
+    font-weight: 600;
+    flex-basis: 30%;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+
+    & > a {
+      text-decoration: none;
+      &:hover {
+        color: $color_blue;
+      }
+    }
+  }
+}
