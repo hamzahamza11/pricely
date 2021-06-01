@@ -32,7 +32,7 @@ function Alerts() {
             </div>
             <div className="alerts_form-leftSide__button">
               <a href="#">
-                <i class="far fa-bell"></i>Set Alert
+                <i className="far fa-bell"></i>Set Alert
               </a>
             </div>
           </div>

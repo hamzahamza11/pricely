@@ -22,11 +22,11 @@ function Footer() {
     },
   ];
 
-  const a = coins.map((elem) => {
+  const a = coins.map((elem,index) => {
     return (
-      <div class="footer_coin">
-        <div class="footer_coin-name">{elem.name}</div>
-        <div class="footer_coin-value">
+      <div className="footer_coin" key={index}>
+        <div className="footer_coin-name">{elem.name}</div>
+        <div className="footer_coin-value">
           {elem.value}
           <span>$</span>
         </div>
