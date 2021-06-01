@@ -1,0 +1,39 @@
+.footer {
+  height: 22%;
+  display: flex;
+  justify-content: space-between;
+
+  &_coin {
+    position: relative;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    flex-basis: 13%;
+    height: 57%;
+    margin-top: 1.4rem;
+    padding: 0 3.5rem 0 3.5rem;
+    text-align: center;
+    &-name {
+      font-size: .8rem;
+      transform: translateY(0.7rem);
+      text-transform: uppercase;
+      color: $color_black;
+    }
+
+    &-value {
+      font-weight: 700;
+      color: $color_black;
+      font-size: 1.6rem;
+      transform: translateY(0.7rem);
+      & > span {
+        margin-left: 0.6rem;
+      }
+    }
+    &:hover > .footer_coin-value {
+      color: $color_green;
+    }
+
+    &:hover {
+      background: $parimary_color_light;
+    }
+  }
+}
